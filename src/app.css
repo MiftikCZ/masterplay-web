@@ -126,16 +126,22 @@ body {
 }
 
 .headerSection::after {
-  content: "";
-  background:url("/Rectangle\ 3.svg"), linear-gradient(#0000, var(--primary) 50%)repeat-x;
+  background: url("/Rectangle\ 3.svg"),linear-gradient(#0000,var(--primary) 20%) repeat-x;
   background-size: cover;
   -webkit-background-size: cover;
-  height: 6em;
+  background-repeat: repeat;  
+  background-size: auto 100%;
+  background-position: 0;
+  height: 6rem;
   width: 100%;
   position: relative;
+  display: inline-block;
+  content:"";
   left: 0;
-  bottom: 100px;
-  z-index: 100;
+  bottom: 0;
+  z-index: 101;
+  bottom: 3.7rem;
+  /* top:50px; */
 }
 
 #app > .main {
@@ -148,8 +154,7 @@ body {
   justify-content: center;
 }
 
-#app > .section {
-
+#app .main > .section {
   background: #053365;
 }
 
@@ -216,7 +221,7 @@ body {
   background-repeat: repeat;  
   background-size: auto 100%;
   background-position: 0 ;
-  height: 12rem;
+  height: 6rem;
   width: 100%;
   position: relative;
   display: inline-block;
@@ -259,7 +264,7 @@ body {
   color: #eee;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
@@ -267,7 +272,7 @@ body {
 
 
 .main-second > .section .blocks .block{
-  box-shadow: #05336688 28px 18px 40px;
+  /* box-shadow: #05336688 28px 18px 40px; */
   border-radius: 1em;
   max-width: 420px;
   display: flex;
@@ -307,18 +312,23 @@ body {
 .main-second > .section.supportus {
   width: fit-content;
   background: #0F1726;
-  box-shadow: #05336688 28px 18px 40px;
+  /* box-shadow: #05336688 28px 18px 40px; */
   border-radius: 1em;
   display: flex;
   color: #eee;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0.8em 1.3em;
   flex-wrap: wrap;
+  padding: 0.8em 1.3em;
+  /* flex-wrap: wrap; */
   width: 100%;
   gap: 1rem;
   max-width: 900px;
+}
+
+.main-second > .section.supportus .row.prvni {
+  max-width: 450px;
 }
 
 
@@ -331,11 +341,12 @@ body {
   align-items: center;
   flex-direction: column;
   
-  width: 100%;
+  width: fit-content;
   overflow: hidden;
 }
 
 .main-second > .section.supportus .row.tlacitka {
+  max-width: 350px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -380,7 +391,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   /* place-items: center; */
   /* place-content: center; */
@@ -390,11 +401,11 @@ body {
 
 .main-second > .bigtitle {
   margin: 0;
-  font-size: 2.3em;
+  font-size: 2.8em;
 }
 
 .novinky .novinka{
-  box-shadow: #05336688 28px 18px 40px;
+  /* box-shadow: #05336688 28px 18px 40px; */
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -579,6 +590,7 @@ footer {
 
 footer .up {
   padding: 1.5rem;
+  padding-left: 2.5rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -615,7 +627,11 @@ footer .bottom {
 }
 
 footer .bottom .text {
+  display: flex;
+  justify-content: center;
   font-size: 0.9em;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -645,6 +661,7 @@ footer .bottom .odkazy .bublina {
 
 .main .section.pravidla .text {
   display: block;
+  width: 100%;
   text-align: center;
   color: #bdbfc4;
 }

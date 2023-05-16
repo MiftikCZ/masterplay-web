@@ -35,9 +35,10 @@ export default function ({path,title}:HeaderProps) {
                     <div class="links">
                         <Link bg={false} linkTo='/' path={path}>Domů</Link> 
                         <Link bg={false} linkTo='/pravidla' path={path}>Pravidla</Link>
-                        {/* <Link bg={false} linkTo='/wiki' path={path}>Wiki</Link> */}
-                        {/* <Link bg={true} linkTo='/#' path={path}>Obchod</Link> */}
-                        {/* <Link bg={false} linkTo='/novinky' path={path}>Novinky</Link> */}
+                        <Link bg={false} linkTo='/#' path={path}>Wiki</Link>
+                        <Link bg={true} linkTo='/#' path={path}>Obchod</Link>
+                        <Link bg={false} linkTo='/#' path={path}>Novinky</Link>
+                        <Link bg={true} linkTo='/#' path={path}>Přihlásit se</Link>
                     </div>
                 </div>
             </div>

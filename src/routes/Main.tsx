@@ -30,7 +30,7 @@ function FindUNasBlock({ icon, title, popis }: FindUNasBlockInterface) {
 function SupportUs() {
   return <>
     <div className="section supportus">
-      <div class="row">
+      <div class="row prvni">
         <h2 className="title">Pomož nám i ty!</h2>
         <div className="popis">Každý hlas se počítá a je to nejlepší způsob, jak nás zdarma podpořit.<br />Jako odměnu za každý hlas dostaneš klíč do truhly, která obsahuje velké množství výher.</div>
       </div>
@@ -119,7 +119,7 @@ export default function () {
     <>
       <div class="main">
         <Header path="/" title="Vydej se za dobrodružstvím!" />
-        <section class="section">
+        <section class="section join-section">
           <div class="join">
             <div className="link">play.masterplay.cz</div>
             <div className="verze">Verze: 1.19.2</div>
