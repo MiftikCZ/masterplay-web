@@ -27,7 +27,7 @@ export default function ({path,title}:HeaderProps) {
         <div class="head headerSection">
             <div className="header">
                 <div className="left">
-                    <img src={masterplay} height={64} alt="" />
+                    <img src={masterplay} height={124} alt="" />
                 </div>
                 <div className="right">
                     <input type="checkbox" name="" id="mobile-navbar-show" />

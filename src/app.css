@@ -37,6 +37,7 @@ body {
 
 .head > .header .links {
   align-items: center;
+  height: 100%;
   gap: 1.1rem;
   display: flex;
   flex-direction: row;
@@ -62,7 +63,7 @@ body {
 }
 
 .head > .header > .left img {
-  height: 2em;
+  height: 2.5em;
   position: relative;
 }
 
@@ -72,7 +73,7 @@ body {
 .headerSection .links {
   display: inherit;
 }
-@media (max-width:700px) {
+@media (max-width:900px) {
   .head .mobile-navbar-show {
     z-index: 105;
     display: flex;
@@ -109,7 +110,9 @@ body {
 }
 
 .head > .summary {
-  height: 18em;
+  /* height: 18em; */
+  height: 100%;
+  padding: 9em 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,7 +360,7 @@ body {
   gap: 1rem;
   flex-shrink: 0;
 }
-.main-second > .section.supportus .row.tlacitka a {
+.main-second > .section.supportus .row.tlacitka .tlacitko {
   padding: 0.5em 0.9em;
   background: var(--primary);
   font-weight: 500;
@@ -367,6 +370,27 @@ body {
   border-radius: 1em;
   transition: 200ms;
 }
+
+.main-second > .section.supportus .row.tlacitka .tlacitko.input {
+  text-align: center;
+  padding: 0.3em 0.8em;
+  background: var(--primary);
+  font-weight: 500;
+  color: #fff;
+  font-family: inherit;
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 1em;
+  transition: 200ms;
+  border: var(--secondary) 4px solid;
+}
+
+.main-second > .section.supportus .row.tlacitka .tlacitko.input:focus-within {
+  outline: none;
+}
+
+
 
 .main-second > .section.supportus .row.tlacitka a:hover {
   background: var(--secondary);

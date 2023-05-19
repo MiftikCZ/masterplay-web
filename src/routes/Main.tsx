@@ -35,6 +35,7 @@ function SupportUs() {
         <div className="popis">Každý hlas se počítá a je to nejlepší způsob, jak nás zdarma podpořit.<br />Jako odměnu za každý hlas dostaneš klíč do truhly, která obsahuje velké množství výher.</div>
       </div>
       <div class="row tlacitka">
+        <input type="text" class="tlacitko input" placeholder="Uživatelské jméno" />
         <a href="" className="tlacitko">Craftlist</a>
         <a href="" className="tlacitko">Czech Craft</a>
       </div>
